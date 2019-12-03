@@ -20,7 +20,6 @@ Please find installation instructions in [`INSTALL.md`](INSTALL.md).
 ## Getting Started
 See [`STL10.md`](STL10.md) for how to setup and run on stl 10
 
-After installation, please see [`GETTING_STARTED.md`](GETTING_STARTED.md) for how to run various ssl tasks.
 
 ## License
 

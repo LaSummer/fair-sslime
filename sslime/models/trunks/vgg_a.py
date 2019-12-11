@@ -86,6 +86,7 @@ class VGG_A(nn.Module):
         feat = x
         for f in range(max_out_feat + 1):
             feat = self._feature_blocks[f](feat)
+            print(feat.size)
             key = self.all_feat_names[f]
             if key in out_feat_keys:
                 out_feats[out_feat_keys.index(key)] = feat

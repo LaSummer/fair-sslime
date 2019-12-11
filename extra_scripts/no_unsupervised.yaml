@@ -1,8 +1,8 @@
 TRAIN:
   DATA_SOURCES: [disk]
-  DATA_PATHS: ["path/to/train_images_0.npy"]
+  DATA_PATHS: ["/scratch/zl2521/cv/fair-sslime/data/train_images_0.npy"]
   LABEL_SOURCES: [disk]
-  LABEL_PATHS: ["path/to/train_labels_0.npy"]
+  LABEL_PATHS: ["/scratch/zl2521/cv/fair-sslime/data/train_labels_0.npy"]
   BATCH_SIZE: 32
   MMAP_MODE: True
   DEFAULT_GRAY_IMG_SIZE: 96
@@ -14,9 +14,9 @@ TRAIN:
 
 TEST:
   DATA_SOURCES: [disk]
-  DATA_PATHS: ["path/to/test_images.npy"]
+  DATA_PATHS: ["/scratch/zl2521/cv/fair-sslime/data/test_images.npy"]
   LABEL_SOURCES: [disk]
-  LABEL_PATHS: ["path/to/test_labels.npy"]
+  LABEL_PATHS: ["/scratch/zl2521/cv/fair-sslime/data/test_labels.npy"]
   BATCH_SIZE: 32
   MMAP_MODE: True
   DEFAULT_GRAY_IMG_SIZE: 96

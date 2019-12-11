@@ -7,7 +7,7 @@ import tarfile
 import numpy as np
 from urllib.request import urlretrieve
 try:
-    from imageio import imsave
+    from imageio import imwrite
 except:
     from scipy.misc import imsave
 
@@ -56,7 +56,7 @@ def save_images(directory, images):
     for i, image in enumerate(images):
         filename = os.path.join(directory, f"{i}.png")
         print(filename)
-        imsave(filename, image, format="png")
+        imwrite(filename, image, format="png")
         X.append(filename)
     return np.asarray(X)
 
